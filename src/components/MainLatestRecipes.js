@@ -40,20 +40,20 @@ width: 6vw;
 `
 const CakeImg = styled.img`
 width: 20vw;
-height: 32vh;
+height: 389px;
 `
 const MargheritaPizza = styled.div`
 width: 6vw;
 `
 const PizzaImg = styled.img`
 width: 20vw;
-height: 32vh;
+height: 389px;
 `
 const PeanutSmoothie = styled.div`
 `
 const SmoothieImg = styled.img`
 width: 20vw;
-height: 32vh;
+height: 389px;
 `
 export default class App extends Component {
     render() {
