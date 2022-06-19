@@ -38,5 +38,5 @@ width: 71px;
 height: 1px;
 `
 export const AboutText = styled.p`
-font-size: 22px;
+font-size: 20.53px;
 `

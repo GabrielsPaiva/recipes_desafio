@@ -1,14 +1,26 @@
 import React from 'react';
+import { createGlobalStyle } from 'styled-components';
 
 // components
 import Header from './components/Header';
-import MainSpoonPart from './components/MainSpoonPart';
+import Main from './components/Main';
+
+const GlobalStyle = createGlobalStyle`
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+`
 
 export default class App extends React.Component {
   render() {
     return (
       <div>
-        <MainSpoonPart/>
+        <GlobalStyle/>
+        <Header/>
+        <Main/>
       </div>
     )
   }

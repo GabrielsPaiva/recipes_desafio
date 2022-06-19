@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Div = styled.div`
+color: #373737;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -12,6 +13,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width: 95%;
+height: 9em;
 `
 export const HeaderNav = styled.nav`
 display: flex;
@@ -28,12 +30,12 @@ padding: 0;
 width: 32%;
 height: 81px;
 &:hover {
-    border: solid 3px;
+    border: solid 3px #373737;
 }
 `
 export const HeaderNavP = styled.p`
 font-size: 24px;
 `
 export const HeaderTitle = styled.div`
-margin-top: 26em;
+margin-top: 34em;
 `
