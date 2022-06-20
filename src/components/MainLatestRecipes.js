@@ -1,21 +1,16 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 import styled from 'styled-components'
-import { createGlobalStyle} from 'styled-components'
 import cake from "../assets/cake.png"
 import pizza from "../assets/pizza.png"
 import smoothie from "../assets/smoothie.png"
 
-const GlobalStyle = createGlobalStyle`
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-`
 const MainDiv = styled.div`
-width: 100%;
-height: 609px;
 background-color: #F2F4F1;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 1503px;
 `
 const DivTitle = styled.div`
 display: flex;
@@ -28,10 +23,10 @@ const MainTitle = styled.h3`
 font-family: 'Roboto', sans-serif;
 font-weight: 900;
 color: #373737;
-font-size: 18px;
+font-size: 40px;
 `
 const Line = styled.div`
-width: 50px;
+width: 104px;
 height: 1px;
 margin: 15px;
 border: solid #373737;
@@ -143,54 +138,51 @@ margin: 90px;
 border: solid #373737;
 display: flex;
 flex-direction: column;
-align-items: center
+align-items: center;
 `
 const FoodNameTitleThree = styled.h3`
 font-size: 20px;
 font-weight: 300;
 width: 140px;
-margin: 20px
+margin: 20px;
 `
-export default class App extends Component{
-    render(){
-        return(
+export default class App extends Component {
+    render() {
+        return (
             <MainDiv>
-            <GlobalStyle />
+                <DivTitle>
+                    <MainTitle>LATEST RECIPES</MainTitle>
+                    <Line></Line>
+                </DivTitle>
 
-            <DivTitle>
-            <MainTitle>LATEST RECIPES</MainTitle>
-            <Line></Line>
-            </DivTitle>
+                <MenuOptions>
+                    <RedVelvet>
+                        <CakeImg src={cake} alt="A  Red Velvet Cake"></CakeImg>
+                        <FoodNameDiv>
+                            <FirstDivLine>
+                                <FoodNameTitle>Red Velvet Cake</FoodNameTitle>
+                            </FirstDivLine>
+                        </FoodNameDiv>
+                    </RedVelvet>
 
-            <MenuOptions>
-                <RedVelvet>
-                    <CakeImg src={cake} alt="A  Red Velvet Cake"></CakeImg>
-                    <FoodNameDiv>
-                        <FirstDivLine>
-                        <FoodNameTitle>Red Velvet Cake</FoodNameTitle>
-                        </FirstDivLine>
-                    </FoodNameDiv>
-                </RedVelvet>
+                    <MargheritaPizza>
+                        <PizzaImg src={pizza} alt="A Margherita Pizza"></PizzaImg>
+                        <FoodNameDivTwo>
+                            <SecondDivLine>
+                                <FoodNameTitleTwo>Margherita Pizza</FoodNameTitleTwo>
+                            </SecondDivLine>
+                        </FoodNameDivTwo>
+                    </MargheritaPizza>
 
-                <MargheritaPizza>
-                <PizzaImg src={pizza} alt="A Margherita Pizza"></PizzaImg>
-                <FoodNameDivTwo>
-                    <SecondDivLine>
-                    <FoodNameTitleTwo>Margherita Pizza</FoodNameTitleTwo>
-                    </SecondDivLine>
-                </FoodNameDivTwo>
-                </MargheritaPizza>
-
-                <PeanutSmoothie>
-                <SmoothieImg src={smoothie} alt="A Peanut Smoothie"></SmoothieImg>
-                <FoodNameDivThree>
-                    <ThirdDivLine>
-                        <FoodNameTitleThree>Peanut Smoothie</FoodNameTitleThree>
-                    </ThirdDivLine>
-                </FoodNameDivThree>
-                </PeanutSmoothie>
-            </MenuOptions>
-
+                    <PeanutSmoothie>
+                        <SmoothieImg src={smoothie} alt="A Peanut Smoothie"></SmoothieImg>
+                        <FoodNameDivThree>
+                            <ThirdDivLine>
+                                <FoodNameTitleThree>Peanut Smoothie</FoodNameTitleThree>
+                            </ThirdDivLine>
+                        </FoodNameDivThree>
+                    </PeanutSmoothie>
+                </MenuOptions>
             </MainDiv>
         )
     }

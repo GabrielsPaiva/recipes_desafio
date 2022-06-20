@@ -6,7 +6,8 @@ import background from "../assets/headerBackground.png"
 
 export default function Header() {
     return (
-        <S.Div style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+        <S.Div>
+            <S.HeaderBox style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
             <S.HeaderBar>
                 <h2 style={{fontSize: "48px"}}>RC</h2>
                 <S.HeaderNav>
@@ -18,7 +19,7 @@ export default function Header() {
             <S.HeaderTitle>
                 <h2 style={{fontSize: "150px"}}>RECIPES</h2>
             </S.HeaderTitle>
-
+        </S.HeaderBox>
         </S.Div>
     )
 }
