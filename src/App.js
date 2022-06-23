@@ -1,5 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import Footer from './components/Footer';
 
 // components
 import Header from './components/Header';
@@ -21,6 +22,7 @@ export default class App extends React.Component {
         <GlobalStyle/>
         <Header/>
         <Main/>
+        <Footer/>
       </div>
     )
   }
