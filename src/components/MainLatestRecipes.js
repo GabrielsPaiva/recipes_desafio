@@ -1,11 +1,10 @@
-import React, { Component } from "react"
+import React from 'react'
 import * as S from "./styles/MainLatestRecipesStyles"
 import cake from "../assets/cake.png"
 import pizza from "../assets/pizza.png"
 import smoothie from "../assets/smoothie.png"
 
-export default class App extends Component {
-    render() {
+export default function App() {
         return (
             <S.MainDiv>
                 <S.DivTitle>
@@ -44,4 +43,3 @@ export default class App extends Component {
             </S.MainDiv>
         )
     }
-}
