@@ -1,18 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { createGlobalStyle } from 'styled-components'
 import instagram from "../assets/instagram.png"
 import twitter from "../assets/twitter.png"
 import facebook from "../assets/facebook.png"
 import pinterest from "../assets/pinterest.png"
-
-const GlobalStyle = createGlobalStyle`
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-`
 const FooterMainDiv = styled.div`
 width: 100%;
 height: 50px;
@@ -21,12 +12,10 @@ const FooterDiv = styled.div`
 width: 100%;
 height: 250px;
 background-color: #F2F4F1;
-/* border: solid green; */
 display: flex;
 justify-content: space-between;
 `
 const SocialMediasDiv = styled.div`
-/* border: solid red; */
 display: flex;
 justify-content: space-evenly;
 width: 300px;
@@ -43,7 +32,6 @@ height: 45px;
 }
 `
 const FooterNav = styled.div`
-/* border: solid purple; */
 width: 40%;
 height: 60px;
 margin-top: 110px;
@@ -80,7 +68,6 @@ export default function App() {
     return (
         <FooterMainDiv>
         <FooterDiv>
-            <GlobalStyle />
 
             <SocialMediasDiv>
                 <Img src={instagram} alt="Logo Instagram" ></Img>
