@@ -5,8 +5,9 @@ import pizza from "../assets/pizza.png"
 import smoothie from "../assets/smoothie.png"
 
 export default function App() {
-        return (
-            <S.MainDiv>
+    return (
+        <S.MainDiv>
+            <S.ContentDiv>
                 <S.DivTitle>
                     <S.MainTitle>LATEST RECIPES</S.MainTitle>
                     <S.Line></S.Line>
@@ -24,22 +25,23 @@ export default function App() {
 
                     <S.MargheritaPizza>
                         <S.PizzaImg src={pizza} alt="A Margherita Pizza"></S.PizzaImg>
-                        <S.FoodNameDivTwo>
-                            <S.SecondDivLine>
-                                <S.FoodNameTitleTwo>Margherita Pizza</S.FoodNameTitleTwo>
-                            </S.SecondDivLine>
-                        </S.FoodNameDivTwo>
+                        <S.FoodNameDiv>
+                            <S.FirstDivLine>
+                                <S.FoodNameTitle>Margherita Pizza</S.FoodNameTitle>
+                            </S.FirstDivLine>
+                        </S.FoodNameDiv>
                     </S.MargheritaPizza>
 
                     <S.PeanutSmoothie>
                         <S.SmoothieImg src={smoothie} alt="A Peanut Smoothie"></S.SmoothieImg>
-                        <S.FoodNameDivThree>
-                            <S.ThirdDivLine>
-                                <S.FoodNameTitleThree>Peanut Smoothie</S.FoodNameTitleThree>
-                            </S.ThirdDivLine>
-                        </S.FoodNameDivThree>
+                        <S.FoodNameDiv>
+                            <S.FirstDivLine>
+                                <S.FoodNameTitle>Peanut Smoothie</S.FoodNameTitle>
+                            </S.FirstDivLine>
+                        </S.FoodNameDiv>
                     </S.PeanutSmoothie>
                 </S.MenuOptions>
-            </S.MainDiv>
-        )
-    }
+            </S.ContentDiv>
+        </S.MainDiv>
+    )
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 const Div = styled.div`
 background-color: #DFE4DE;
@@ -8,6 +9,10 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: 764px;
+
+${media.lessThan("small")`
+height: 650px;
+`}
 `
 const FooterContent = styled.div`
 display: flex;
@@ -16,6 +21,10 @@ justify-content: space-between;
 align-items: center;
 width: 792px;
 height: 386px;
+
+${media.lessThan("small")`
+width: 100%;
+`}
 `
 const SubscribeBox = styled.div`
 display: flex;
@@ -24,6 +33,10 @@ justify-content: space-between;
 align-items: center;
 width: 372px;
 height: 103px;
+
+${media.lessThan("small")`
+width: 100%;
+`}
 `
 const Input = styled.input`
 font-size: 25px;
@@ -32,6 +45,16 @@ outline: none;
 text-indent: 50px;
 width: 100%;
 height: 120px;
+
+${media.lessThan("medium")`
+width: 90%;
+`}
+${media.lessThan("small")`
+font-size: 20px;
+text-indent: 20px;
+width: 70%;
+height: 80px;
+`}
 `
 const SubmitButton = styled.button`
 font-size: 25px;

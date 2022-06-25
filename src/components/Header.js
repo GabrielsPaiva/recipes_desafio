@@ -17,7 +17,7 @@ export default function Header() {
                 </S.HeaderNav>
             </S.HeaderBar>
             <S.HeaderTitle>
-                <h2 style={{fontSize: "150px"}}>RECIPES</h2>
+                <h2>RECIPES</h2> {/*styled directly in the div*/}
             </S.HeaderTitle>
         </S.HeaderBox>
         </S.Div>
