@@ -6,7 +6,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 100%;
-height: 1503px;
+height: 800px;
 `
 export const DivTitle = styled.div`
 display: flex;
@@ -19,10 +19,10 @@ export const MainTitle = styled.h3`
 font-family: 'Roboto', sans-serif;
 font-weight: 900;
 color: #373737;
-font-size: 40px;
+font-size: 1.rem;
 `
 export const Line = styled.div`
-width: 104px;
+width: 5vw;
 height: 1px;
 margin: 15px;
 border: solid #373737;
@@ -93,7 +93,7 @@ align-items: center;
 export const FoodNameTitle = styled.h3`
 font-size: 20px;
 font-weight: 300;
-width: 140px;
+width: 150px;
 margin: 20px;
 `
 export const FoodNameDivTwo = styled.div`
@@ -116,7 +116,7 @@ align-items: center;
 export const FoodNameTitleTwo = styled.h3`
 font-size: 20px;
 font-weight: 300;
-width: 140px;
+width: 150px;
 margin: 20px;
 `
 export const FoodNameDivThree = styled.div`
@@ -139,6 +139,6 @@ align-items: center;
 export const FoodNameTitleThree = styled.h3`
 font-size: 20px;
 font-weight: 300;
-width: 140px;
+width: 160px;
 margin: 20px;
 `
