@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import media from "styled-media-query"
 
 export const Div = styled.div`
 display: flex;
 width: 100%;
 height: 949px;
+
+${media.lessThan('huge')`
+height: 800px;
+`}
 `
 export const SpoonImage = styled.img`
 width: 50%;
