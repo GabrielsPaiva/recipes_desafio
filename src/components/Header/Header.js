@@ -1,8 +1,8 @@
 import React from "react"
-import * as S from "./styles/HeaderStyles"
+import * as S from "./Style"
 
 // images
-import background from "../assets/headerBackground.png"
+import background from "../../assets/headerBackground.png"
 
 export default function Header() {
     return (

@@ -1,10 +1,10 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 // components
-import Header from './components/Header';
-import Main from './components/Main';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
 
 const GlobalStyle = createGlobalStyle`
 *{

@@ -1,8 +1,8 @@
 import React from 'react'
-import * as S from "./styles/MainLatestRecipesStyles"
-import cake from "../assets/cake.png"
-import pizza from "../assets/pizza.png"
-import smoothie from "../assets/smoothie.png"
+import * as S from "./Styles"
+import cake from "../../../assets/cake.png"
+import pizza from "../../../assets/pizza.png"
+import smoothie from "../../../assets/smoothie.png"
 
 export default function App() {
     return (

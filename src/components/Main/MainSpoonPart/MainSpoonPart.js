@@ -1,8 +1,8 @@
 import React from 'react';
-import * as S from "./styles/MainSpoonPartStyles"
+import * as S from "./Styles"
 
 // image
-import spoonImage from "../assets/spoonImage.png"
+import spoonImage from "../../../assets/spoonImage.png"
 
 export default function MainSpoonPart() {
     return (

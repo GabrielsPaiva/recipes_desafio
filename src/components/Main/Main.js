@@ -1,8 +1,8 @@
 import React from 'react';
 
-
-import MainSpoonPart from './MainSpoonPart';
-import MainLatestRecipes from "./MainLatestRecipes.js"
+// components
+import MainLatestRecipes from "../Main/MainLatestRecipes/MainLatestRecipes"
+import MainSpoonPart from '../Main/MainSpoonPart/MainSpoonPart';
 
 export default function Main() {
     return (
